@@ -1,0 +1,10 @@
+# bot_persing_html
+This project is a Python-based command-line tool designed for basic web data extraction and HTML parsing. It leverages the `requests` library to handle HTTP connections and retrieve raw page content, and uses `BeautifulSoup` for parsing and navigating HTML structures. Additionally, it incorporates regular expressions (`re`) to identify and extract specific patterns such as phone numbers from web pages.
+
+The tool is structured around multiple modular functions, each responsible for a specific task. The request function establishes a connection to a given URL and prints the raw HTML response, allowing the user to inspect the full page content. The parsing function focuses on extracting structured information, such as the page title, demonstrating how HTML elements can be accessed and interpreted programmatically.
+
+Another function is dedicated to link extraction, scanning the page for anchor tags and retrieving all available hyperlinks. This is particularly useful for reconnaissance, crawling, or understanding the structure of a website. The phone number extraction feature uses a flexible regular expression pattern to identify different phone number formats, including variations with or without parentheses and hyphens, making it adaptable to real-world data inconsistencies.
+
+The program is controlled through an interactive menu loop, allowing the user to select different functionalities dynamically. This design makes the tool user-friendly and extensible, as new features can be easily integrated into the menu system. Input validation is also implemented to handle incorrect options and empty URLs, improving overall robustness.
+
+Overall, this project demonstrates core concepts essential for web automation and data extraction, including HTTP communication, HTML parsing, pattern matching, and user interaction through a CLI interface. It serves as a strong foundational tool for more advanced applications in areas such as web scraping, automation, and cybersecurity reconnaissance.
